@@ -7,7 +7,8 @@
 Install Laravel Sail 
 
 ```bash
-  docker compose up
+  docker compose-build --no-cache
+  ./vendor/bin/sail up
   ./vendor/bin/sail up
 ```
 
