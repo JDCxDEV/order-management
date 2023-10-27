@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitbfa53761d93dc37fa1af9b69f68d8613
+class ComposerStaticInit1330951a1e3dbe7e84f32e0b545a1bb3
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -546,9 +546,11 @@ class ComposerStaticInitbfa53761d93dc37fa1af9b69f68d8613
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Controllers\\OrderController' => __DIR__ . '/../..' . '/app/Http/Controllers/OrderController.php',
         'App\\Http\\Controllers\\ProductController' => __DIR__ . '/../..' . '/app/Http/Controllers/ProductController.php',
+        'App\\Http\\Controllers\\UserController' => __DIR__ . '/../..' . '/app/Http/Controllers/UserController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
+        'App\\Http\\Middleware\\ManagerMiddleware' => __DIR__ . '/../..' . '/app/Http/Middleware/ManagerMiddleware.php',
         'App\\Http\\Middleware\\PreventRequestsDuringMaintenance' => __DIR__ . '/../..' . '/app/Http/Middleware/PreventRequestsDuringMaintenance.php',
         'App\\Http\\Middleware\\RedirectIfAuthenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/RedirectIfAuthenticated.php',
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
@@ -558,6 +560,7 @@ class ComposerStaticInitbfa53761d93dc37fa1af9b69f68d8613
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Http\\Requests\\CustomerRequest' => __DIR__ . '/../..' . '/app/Http/Requests/CustomerRequest.php',
         'App\\Http\\Requests\\ProductRequest' => __DIR__ . '/../..' . '/app/Http/Requests/ProductRequest.php',
+        'App\\Http\\Requests\\UserRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UserRequest.php',
         'App\\Models\\Customer' => __DIR__ . '/../..' . '/app/Models/Customer.php',
         'App\\Models\\Order' => __DIR__ . '/../..' . '/app/Models/Order.php',
         'App\\Models\\OrderItem' => __DIR__ . '/../..' . '/app/Models/OrderItem.php',
@@ -6523,9 +6526,9 @@ class ComposerStaticInitbfa53761d93dc37fa1af9b69f68d8613
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitbfa53761d93dc37fa1af9b69f68d8613::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitbfa53761d93dc37fa1af9b69f68d8613::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitbfa53761d93dc37fa1af9b69f68d8613::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit1330951a1e3dbe7e84f32e0b545a1bb3::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit1330951a1e3dbe7e84f32e0b545a1bb3::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit1330951a1e3dbe7e84f32e0b545a1bb3::$classMap;
 
         }, null, ClassLoader::class);
     }
