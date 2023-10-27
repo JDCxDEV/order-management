@@ -7,7 +7,7 @@
 Install Laravel Sail 
 
 ```bash
-  ./vendor/bin/sail build
+  docker compose up
   ./vendor/bin/sail up
 ```
 
